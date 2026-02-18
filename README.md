@@ -24,6 +24,7 @@ POST   /auth/reset-password
 POST   /auth/verify-email
 
 ## Cтруктура проєкту
+```
 ├── .idea/
 ├── node_module/
 ├── README.md
@@ -31,6 +32,7 @@ POST   /auth/verify-email
 ├── package.json
 ├── server.js
 └── swagger.yaml
+```
 
 ## Запуск
 Запуск у IDE JetBrains WebStorm через консоль наступною командою:
