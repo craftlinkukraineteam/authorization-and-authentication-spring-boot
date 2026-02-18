@@ -3,17 +3,19 @@
 
 ## Використані технології
 
-- Node.js;
-- Express.js;
-- TypeScript;
-- BCrypt;
+- Spring Boot;
+- Spring Security;
+- Spring Data JPA;
+- Spring WebMVC;
+- Lombok;
+- Slf4j;
 - Swagger UI;
 - YAML;
 - JWT (JSON Web Token);
 
 ## Логіка роботи
 Серверний сервіс взаємодіє із клієнтським сервісом через такі API-ендпоінти:
-
+```
 POST   /auth/register
 POST   /auth/login
 POST   /auth/logout
@@ -22,36 +24,37 @@ GET    /auth/profile
 POST   /auth/forgot-password
 POST   /auth/reset-password
 POST   /auth/verify-email
+```
 
 ## Cтруктура проєкту
 ```
 ├── .idea/
 ├── .mvn/
-├── src
-    └── main
-        └── java
-             └── authentication.and.authorization.springboot
-                 ├── config
+├── src/
+    └── main/
+        └── java/
+             └── authentication.and.authorization.springboot/
+                 ├── config/
                      ├── JwtAuthenticationFilter.java
                      └── SecurityConfig.java
-                 ├── controller
+                 ├── controller/
                      ├── AuthController.java
                      └── LoginController.java
-                 ├── entity
+                 ├── entity/
                      ├── AuditLogs.java
                      ├── RefreshToken.java
                      ├── ResetPassword.java
                      ├── User.java
                      ├── UserProfile.java
                      └── UserSocials.java
-                 ├── repository
+                 ├── repository/
                      ├── AuditLogsRepository.java
                      ├── RefreshTokenRepository.java
                      ├── ResetPasswordRepository.java
                      ├── UserRepository.java
                      ├── UserProfileRepository.json
                      └── UserSocialsRepository.java
-                 ├── service
+                 ├── service/
                      ├── request/
                          ├── LoginRequest.java
                          └── RegisterRequest.java
@@ -60,12 +63,23 @@ POST   /auth/verify-email
                      ├── AuthService.java
                      └── JwtService.java
                  └── MicroserviceApplication.java
-        └── resources
+        └── resources/
             ├── static/
             ├── resources/
             └── application.properties
-    └── test
-
+    └── test/
+        └── java/
+            └── authentication.and.authorization.springboot/
+                └── MicroserviceApplicationTests
+├── target/
+    └── classes/
+        └── application.properties
+├── HELP.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── .gitignore/
+    └── .gitattributes
 ```
 
 ## Запуск
