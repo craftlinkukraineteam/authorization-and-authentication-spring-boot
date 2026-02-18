@@ -10,7 +10,6 @@
 - Lombok;
 - Slf4j;
 - Swagger UI;
-- YAML;
 - JWT (JSON Web Token);
 
 ## Логіка роботи
@@ -70,7 +69,7 @@ POST   /auth/verify-email
     └── test/
         └── java/
             └── authentication.and.authorization.springboot/
-                └── MicroserviceApplicationTests
+                └── MicroserviceApplicationTests.java
 ├── target/
     └── classes/
         └── application.properties
@@ -78,8 +77,11 @@ POST   /auth/verify-email
 ├── mvnw
 ├── mvnw.cmd
 ├── pom.xml
-└── .gitignore/
+├── swagger.yaml
+├── .gitignore/
     └── .gitattributes
+└── dockerfile/
+    └── docker-compose.yml
 ```
 
 ## Запуск
