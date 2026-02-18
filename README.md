@@ -26,12 +26,46 @@ POST   /auth/verify-email
 ## Cтруктура проєкту
 ```
 ├── .idea/
-├── node_module/
-├── README.md
-├── package-lock.json
-├── package.json
-├── server.js
-└── swagger.yaml
+├── .mvn/
+├── src
+    └── main
+        └── java
+             └── authentication.and.authorization.springboot
+                 ├── config
+                     ├── JwtAuthenticationFilter.java
+                     └── SecurityConfig.java
+                 ├── controller
+                     ├── AuthController.java
+                     └── LoginController.java
+                 ├── entity
+                     ├── AuditLogs.java
+                     ├── RefreshToken.java
+                     ├── ResetPassword.java
+                     ├── User.java
+                     ├── UserProfile.java
+                     └── UserSocials.java
+                 ├── repository
+                     ├── AuditLogsRepository.java
+                     ├── RefreshTokenRepository.java
+                     ├── ResetPasswordRepository.java
+                     ├── UserRepository.java
+                     ├── UserProfileRepository.json
+                     └── UserSocialsRepository.java
+                 ├── service
+                     ├── request/
+                         ├── LoginRequest.java
+                         └── RegisterRequest.java
+                     ├── response/
+                         └── AuthResponse.java
+                     ├── AuthService.java
+                     └── JwtService.java
+                 └── MicroserviceApplication.java
+        └── resources
+            ├── static/
+            ├── resources/
+            └── application.properties
+    └── test
+
 ```
 
 ## Запуск
