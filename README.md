@@ -8,8 +8,8 @@
 - Spring Data JPA;
 - Spring WebMVC;
 - Lombok;
-- Slf4j;
 - Swagger UI;
+- Docker Compose;
 - JWT (JSON Web Token);
 
 ## Логіка роботи
